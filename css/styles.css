@@ -138,6 +138,7 @@ img {
   color: var(--header-text-color);
   display: flex;
   flex-direction: column;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .navigation-list-link:after,
@@ -163,6 +164,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--address-text-color);
   margin-left: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-element {
@@ -174,12 +176,14 @@ img {
   fill: var(--env_phone_icon_color);
   width: 16px;
   height: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adresses-phone-svg {
   fill: var(--env_phone_icon_color);
   width: 10px;
   height: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-element:not(:last-child) {
@@ -192,6 +196,7 @@ img {
 .address-list-link:focus .address-list-link,
 .active-page-link {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*do not work. Why?*/
@@ -200,6 +205,7 @@ img {
 .address-list-element:hover .adresses-phone-svg,
 .address-list-element:focus .adresses-phone-svg {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-subfeature {
@@ -296,6 +302,7 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--social-links-accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link {
@@ -305,16 +312,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:focus,
 .footer-social-link:hover {
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover .footer-social-svg,
 .footer-social-link:focus .footer-social-svg {
   fill: var(--social-links-accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*----------------- End Footer styles ------------------*/
@@ -371,12 +381,16 @@ img {
 
   padding: 10px 32px;
   margin-top: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   color: var(--button-text-accent);
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------ End Hero styles -------------------*/
@@ -568,7 +582,15 @@ img {
   margin-top: 16px;
 }
 
-.social-link-element,
+.social-link-element {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
 .social-link {
   display: flex;
   width: 44px;
@@ -576,6 +598,7 @@ img {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-element:not(:last-child) {
@@ -586,11 +609,13 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--social-links-general-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:focus .social-link-svg,
 .social-link:hover .social-link-svg {
   fill: var(--social-links-accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*.social-link-element:hover {
@@ -600,6 +625,7 @@ img {
 .social-link:focus,
 .social-link:hover {
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------- End Team styles ------------------*/
@@ -621,6 +647,9 @@ img {
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-button:hover,
@@ -630,6 +659,9 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------  Customers Styles -------------*/
@@ -646,6 +678,7 @@ img {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-element:not(:last-child) {
@@ -698,16 +731,19 @@ img {
 
 .social-class-svg {
   fill: var(--customers-link-default-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-link:focus .social-class-svg,
 .customer-link:hover .social-class-svg {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-element:focus,
 .customers-list-element:hover {
   border: 1px solid var(--accent-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------ End Customers Styles -------------*/
